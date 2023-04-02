@@ -41,6 +41,7 @@
 
  <script>
   var docMod = document.lastModified; // gets last modified date and time of the index.html file
+  alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
   console.log("This file last modified  " + docMod); // displays last modified date and time in the javascipt browser console 
 
 /* detectVerticalSquash & drawImageIOSFix = are functions that are critical due to a flaw in the iPhone camera software that squishes any photos displayed on an HTML5 canvas element. https://github.com/stomita/ios-imagefile-megapixel
@@ -135,12 +136,19 @@
       <div id="messageDisplayArea"></div>
       
       <canvas id="myCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>
+      <canvas id="blueCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>
       <script> /* This script initiates the cavas and puts the text on the canvas "myCanvas" */
         var canvas = document.getElementById('myCanvas');
         var context = canvas.getContext("2d");
         context.font = '20pt Calibri';
         context.fillStyle = "black";
         context.fillText("Original image will go here", 10, 20);
+       
+        var canvas2 = document.getElementById('blueCanvas');
+        var context = canvas.getContext("2d");
+        context.font = '20pt Calibri';
+        context.fillStyle = "blye";
+        context.fillText("Processed image will go here", 10, 20);
       </script>
 
     </div><!-- /content -->
