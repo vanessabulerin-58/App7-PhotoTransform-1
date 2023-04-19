@@ -104,6 +104,8 @@
           
          var canvas2 = document.getElementById('myCanvas2'); //This variable will create a new canvas that is called myCanvas2  
          var context2 = canvas2.getContext("2d"); //This variable will project a 2d image onto the canvas
+         
+         var imageData = context.getImageData(0, 0, 600, 500); //This is the variable determining the location, width, and height for the image when it loads onto the canvas. 
           
         } // end of img.onload
         
