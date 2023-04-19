@@ -106,7 +106,11 @@
          var context2 = canvas2.getContext("2d"); //This variable will project a 2d image onto the canvas
          
          var imageData = context.getImageData(0, 0, 600, 500); //This is the variable determining the location, width, and height for the image when it loads onto the canvas. 
-          
+         var data = imageData.data; 
+         
+         for(var 1=0, n=data.length; 1 < n; 1+=4) { //This command removes the green and red from the image
+             
+         
         } // end of img.onload
         
         img.src = reader.result;
