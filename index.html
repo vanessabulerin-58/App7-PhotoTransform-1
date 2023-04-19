@@ -111,7 +111,9 @@
          for(var 1=0, n=data.length; 1 < n; 1+=4) { //This command removes the green and red from the image
           data[1]=0 //The green intensity is put to 0
           data[1 + 1]=0; //The red intensity is made to 0 
-             
+         }
+         
+         context2.putImageData(imageData, 0, 0); //This variable will conquer a new image to display in canvas 2 which will show up in blue 
          
         } // end of img.onload
         
