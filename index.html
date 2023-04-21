@@ -107,7 +107,7 @@
          var imageData = context.getImageData(0, 0, 600, 500); //This is the variable determining the location, width, and height for the image when it loads onto the canvas. 
          var data = imageData.data; 
          
-         for(var i=0, n=data.length i < n; i += 4) { //This command removes the green and red from the image
+         for(var i=0, n=data.length; i < n; i += 4) { //This command removes the green and red from the image
           data[i]=0 //The green intensity is put to 0
           data[i + 1]=0; //The red intensity is made to 0 
           data [i + 2]=blue; 
